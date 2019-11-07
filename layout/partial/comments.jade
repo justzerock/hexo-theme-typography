@@ -15,6 +15,23 @@ if theme.disqus
         })();
     script(id='dsq-count-scr' src='//#{theme.disqus}.disqus.com/count.js' async)
 
+if theme.valine
+    script(src= url_for('//unpkg.com/valine@latest/dist/Valine.min.js'))
+    if theme.visitor
+        if !is_page()
+            span(id='#{url_for(page.path)}', class='leancloud_visitors')
+                em.post-meta-item-text 访问次数为&nbsp;&nbsp;
+                i.leancloud-visitors-count 0
+            
+    #vcomments
+    script(type='text/javascript').
+        new Valine({
+            el: '#vcomments',
+            appId: '#{config.leancloud.app_id}',
+            appKey: '#{config.leancloud.app_key}',
+            visitor: '#{theme.visitor}'
+        })
+
 if theme.livere
     #lv-container(data-id='city', data-uid='#{theme.livere}')
         script(type='text/javascript').

@@ -1,18 +1,23 @@
-title_primary: "活版印字" # the bigger text
-title_secondary: "Typography" # the smaller text
+title_primary: "亦如年少" # the bigger text
+title_secondary: "JustZero" # the smaller text
 keywords:
 
 twitter: #username
 rss: atom.xml
-weibo: #username/id
+weibo: 1736891295
 instagram: #username
-github: #username
+github: justzerock
 
 # Choose the comment service according to your need.
 # Please do not use the two services at the same time.
 livere: # [data-uid] on livere.com
 disqus: # [short_name] on disqus.com
 dove: # For fun ONLY. Set to true to 'disable' comments on your site.
+valine: true
+visitor: true
+# leancloud: 
+#   app_id: lUBXsWwG1SnROnGq9wwSqSin-9Nh9j0Va
+#   app_key: m74UnYUVQL6SbcpdG5mWlIbi
 
 # Set true to show the page indicator.
 showPageCount: true

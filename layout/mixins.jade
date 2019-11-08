@@ -41,6 +41,7 @@ mixin make_page_links()
     if site.pages
         - site.pages.each(function (page) {
             li
+                if page.path.indexOf('404') === -1
                     if is_current(page.path)
                         a.current(href=config.root+page.path)= page.title
                     else
